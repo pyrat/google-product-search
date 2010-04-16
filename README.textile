@@ -1,0 +1,21 @@
+h1. Google Product Search
+
+This plugin provides a rake task for generating an xml feed for google product search.
+
+rake googlebase:generate generates an xml file of your products.
+
+h2. Configuration
+
+To configure, add Rails.root/config/google_base.yml
+
+Example google_base.yml file in files/google_base.yml
+
+
+As the structure of the xml is dependant on your product models I have left it to the programmer to modify the google.rake file and set the correct instance methods for returning product information, along with the named_scope for returning live products.
+
+TODO:
+
+Instead of editing this rake file manually it would be good to add a plugin type class method which can take the configuration of your products and generate this automatically.
+
+License: MIT
+Copyright: Alastair Brunton 2010
